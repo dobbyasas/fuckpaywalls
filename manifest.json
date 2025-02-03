@@ -1,9 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "Im not paying for stuff i can hack",
-    "version": "1.0",
+    "name": "Im not paying for shit i can hack",
+    "version": "1.4",
     "author": "Tofi Novak",
-    "description": "Remove shit i dont want to see when not paying",
+    "description": "FREE TABS FOR EVERYONE",
     "permissions": ["scripting"],
     "host_permissions": ["<all_urls>"],
     "background": {
@@ -15,6 +15,19 @@
         "js": ["content.js"],
         "run_at": "document_idle"
       }
-    ]
+    ],
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      },
+      "default_title": "Remove Annoying Elements"
+    }
   }
   
