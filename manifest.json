@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Im not paying for stuff i can hack",
+    "version": "1.0",
+    "author": "Tofi Novak",
+    "description": "Remove shit i dont want to see when not paying",
+    "permissions": ["scripting"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
